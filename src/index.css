@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-cursive: 'Caveat', cursive;
+
+  --color-primary: #080b0b;
+  --color-secondary: #0d1211;
+  --color-text-main: #f5f5f2;
+  --color-text-muted: #8c9390;
+  --color-accent: #57f287;
+  --color-accent-secondary: #9affb5;
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+}
+
+@layer base {
+  body {
+    @apply bg-primary text-text-main font-sans antialiased selection:bg-accent selection:text-black overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .noise-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  .glass-card {
+    @apply bg-secondary/40 backdrop-blur-xl border border-border-subtle;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  /* Custom grid lines */
+  .guideline {
+    @apply absolute top-0 bottom-0 w-px bg-white/[0.03] pointer-events-none z-0;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
