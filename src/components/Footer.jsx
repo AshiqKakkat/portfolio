@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="flex items-center gap-6 lg:w-[30%]">
             <img src={LogoImg} alt="Mohammed Ashiq K Logo" className="h-[50px] lg:h-[60px] w-auto object-contain opacity-60" />
             <div className="flex flex-col">
-              <h3 className="text-white font-medium text-[17px] tracking-wide mb-1">Mohammed Ashiq K</h3>
+              <h3 className="text-white font-medium text-[17px] tracking-wide mb-1">Ashiq Kakkat</h3>
               <p className="text-[#8E9A94] text-[14px] mb-2">Software Engineer</p>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#54F28A]"></span>
@@ -113,7 +113,7 @@ const Footer = () => {
 
         {/* Bottom Row */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-[#6A7872]">
-          <p className="w-full md:w-[30%] text-center md:text-left">&copy; {currentYear} Mohammed Ashiq K. All rights reserved.</p>
+          <p className="w-full md:w-[30%] text-center md:text-left">&copy; {currentYear} Ashiq Kakkat. All rights reserved.</p>
           
           <div className="w-full md:w-[40%] flex justify-center items-center gap-6">
              <div className="hidden md:block w-px h-4 bg-white/5"></div>

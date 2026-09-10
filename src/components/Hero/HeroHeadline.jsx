@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const keywords = ["WEBSITES", "E-COMMERCE", "WEB APPS", "IDEAS"];
+const keywords = ["SHOPIFY", "REACT", "E-COMMERCE", "WEB APPS"];
 
 const HeroHeadline = () => {
   const containerVariants = {

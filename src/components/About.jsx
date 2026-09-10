@@ -14,7 +14,7 @@ const About = () => {
         >
           <h2 className="text-sm text-brand-green tracking-widest uppercase mb-4">About Me</h2>
           <h3 className="text-4xl md:text-5xl font-serif text-white max-w-3xl leading-tight">
-            Architecting secure, scalable, and user-focused web applications.
+            Expert MERN & Shopify Developer architecting secure, scalable web applications.
           </h3>
         </motion.div>
 
